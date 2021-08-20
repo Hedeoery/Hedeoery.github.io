@@ -16,23 +16,33 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Firstmd | 精品小屋</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Firstmd | 奥义猫sir</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/css/my.css">
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/girl.png);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -43,9 +53,9 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">精品小屋</span>
+                    <span class="logo-span">奥义猫sir</span>
                 </a>
             </div>
             
@@ -142,9 +152,9 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">精品小屋</div>
+        <div class="logo-name">奥义猫sir</div>
         <div class="logo-desc">
             
             专注于Web,分享生活,分享知识
@@ -236,7 +246,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/Hedeoery/Hedeoery.github.io.git" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -293,7 +303,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/Hedeoery/Hedeoery.github.io.git" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -309,10 +319,23 @@
 </header>
 
     
+<script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -330,7 +353,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -483,14 +506,14 @@
             <div id="articleContent">
                 <h1 id="单列集合"><a href="#单列集合" class="headerlink" title="单列集合"></a>单列集合</h1><h2 id="集合类型"><a href="#集合类型" class="headerlink" title="集合类型"></a>集合类型</h2><ol>
 <li><p>单列集合</p>
-<p><img src="Collection-1626424718772.png" alt="Collection"></p>
+<p><img src="/images/loading.png" data-original="Collection-1626424718772.png" alt="Collection"></p>
 </li>
 <li><p>双列集合</p>
 </li>
 </ol>
-<p><img src="Map-1626424735580.png" alt="Map"></p>
+<p><img src="/images/loading.png" data-original="Map-1626424735580.png" alt="Map"></p>
 <h2 id="单列集合-1"><a href="#单列集合-1" class="headerlink" title="单列集合"></a>单列集合</h2><p>###<strong>由ArrayList类讲解add()方法</strong></p>
-<p><img src="ArrayList-1626513696006.png" alt="ArrayList"></p>
+<p><img src="/images/loading.png" data-original="ArrayList-1626513696006.png" alt="ArrayList"></p>
 <ol>
 <li><p>常见方法和属性</p>
 <pre class=" language-java"><code class="language-java"><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -645,8 +668,8 @@
 </ul>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span>E e<span class="token punctuation">,</span> Object<span class="token punctuation">[</span><span class="token punctuation">]</span> elementData<span class="token punctuation">,</span> <span class="token keyword">int</span> s<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>s <span class="token operator">==</span> elementData<span class="token punctuation">.</span>length<span class="token punctuation">)</span>            elementData <span class="token operator">=</span> <span class="token function">grow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        elementData<span class="token punctuation">[</span>s<span class="token punctuation">]</span> <span class="token operator">=</span> e<span class="token punctuation">;</span>        size <span class="token operator">=</span> s <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>
 </code></pre>
-<p><img src="image-20210717174101459-1626514863267.png"></p>
-<p><img src="image-20210717174256002-1626514978606.png" alt="image-20210717174256002"></p>
+<p><img src="/images/loading.png" data-original="image-20210717174101459-1626514863267.png"></p>
+<p><img src="/images/loading.png" data-original="image-20210717174256002-1626514978606.png" alt="image-20210717174256002"></p>
 <blockquote>
 <p>Increases the capacity to ensure that it can hold at least the number of elements specified by the minimum capacity argument.<br>Params:<br>minCapacity – the desired minimum capacity<br>Throws:<br>OutOfMemoryError – if minCapacity is less than zero</p>
 <p>增加容量，以确保它至少可以容纳最小容量参数所指定的元素数量。<br>Params:<br>minCapacity - 所需的最小容量<br>抛出。<br>OutOfMemoryError - 如果minCapacity小于0</p>
@@ -659,8 +682,8 @@
 </blockquote>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">newCapacity</span><span class="token punctuation">(</span><span class="token keyword">int</span> minCapacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment" spellcheck="true">// overflow-conscious code        int oldCapacity = elementData.length;                //除初次扩容外，满10个元素后，每次添加元素，扩容1.5倍        int newCapacity = oldCapacity + (oldCapacity >> 1);                if (newCapacity - minCapacity &lt;= 0) {            if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA)                return Math.max(DEFAULT_CAPACITY, minCapacity);//初始长度为10            if (minCapacity &lt; 0) // overflow                throw new OutOfMemoryError();            return minCapacity;        }        return (newCapacity - MAX_ARRAY_SIZE &lt;= 0)//有无超过允许最大容量            ? newCapacity            : hugeCapacity(minCapacity);//超过MAX_ARRAY_SIZE，仍然取MAX_ARRAY_SIZE    }</span>
 </code></pre>
-<p><img src="image-20210717174511049.png" alt="image-20210717174511049"></p>
-<p><img src="image-20210717174726436-1626515259510.png" alt="image-20210717174726436"></p>
+<p><img src="/images/loading.png" data-original="image-20210717174511049.png" alt="image-20210717174511049"></p>
+<p><img src="/images/loading.png" data-original="image-20210717174726436-1626515259510.png" alt="image-20210717174726436"></p>
 </li>
 </ol>
 </li>
@@ -671,7 +694,7 @@
 <li>当元素添至10 个，以后每次添加，扩容1.5倍  ，当扩至MAX_ARRAY_SIZE，将保持MAX_ARRAY_SIZE大小。          </li>
 </ul>
 <h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3><h4 id="特点：实现了双向链表和双向队列"><a href="#特点：实现了双向链表和双向队列" class="headerlink" title="特点：实现了双向链表和双向队列"></a>特点：实现了双向链表和双向队列</h4><ul>
-<li><p>依赖关系<br><img src="LinkedList-1626501451296-1626501488898.png" alt="LinkedList"></p>
+<li><p>依赖关系<br><img src="/images/loading.png" data-original="LinkedList-1626501451296-1626501488898.png" alt="LinkedList"></p>
 </li>
 <li><p>可添加任意的元素，元素可重复</p>
 </li>
@@ -705,7 +728,7 @@
 </li>
 </ul>
 <h4 id="双向链表和双向队列"><a href="#双向链表和双向队列" class="headerlink" title="双向链表和双向队列"></a>双向链表和双向队列</h4><ol>
-<li>双向链表结构<br><img src="image-20210717142748254-1626503272103.png" alt="image-20210717142748254"></li>
+<li>双向链表结构<br><img src="/images/loading.png" data-original="image-20210717142748254-1626503272103.png" alt="image-20210717142748254"></li>
 </ol>
 <h4 id="以add（）方法和remove（）讲解LindedList添加和删除元素机制"><a href="#以add（）方法和remove（）讲解LindedList添加和删除元素机制" class="headerlink" title="以add（）方法和remove（）讲解LindedList添加和删除元素机制"></a>以add（）方法和remove（）讲解LindedList添加和删除元素机制</h4><ol>
 <li><strong>add（）</strong></li>
@@ -714,7 +737,7 @@
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LinkedList_Eg</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>        LinkedList link <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            link<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>link<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span>
 </code></pre>
 <p><code>LinkedList link = new LinkedList()**;</code>调用无参构造**</p>
-<p><img src="image-20210717155513225-1626508516961.png" alt="image-20210717155513225"></p>
+<p><img src="/images/loading.png" data-original="image-20210717155513225-1626508516961.png" alt="image-20210717155513225"></p>
 <hr>
 <p><strong>添加函数</strong></p>
 <blockquote>
@@ -731,7 +754,7 @@
 </code></pre>
 <hr>
 <p><strong>添加2个元素后的LinkedList</strong></p>
-<p><img src="image-20210717161444263.png" alt="image-20210717161444263"></p>
+<p><img src="/images/loading.png" data-original="image-20210717161444263.png" alt="image-20210717161444263"></p>
 <hr>
 <p><strong>Linkedlist的add（）总结：</strong></p>
 <ul>
@@ -763,7 +786,7 @@
 <pre class=" language-java"><code class="language-java"><span class="token keyword">private</span> E <span class="token function">unlinkFirst</span><span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>E<span class="token operator">></span> f<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// assert f == first &amp;&amp; f != null;    final E element = f.item;    final Node&lt;E> next = f.next;    f.item = null;    f.next = null; // help GC    first = next;    if (next == null)        last = null;    else        next.prev = null;    size--;    modCount++;    return element;}</span>
 </code></pre>
 <p><strong>删除首个结点后的LinkedList</strong></p>
-<p><img src="image-20210717163539915-1626510942358.png" alt="image-20210717163539915"></p>
+<p><img src="/images/loading.png" data-original="image-20210717163539915-1626510942358.png" alt="image-20210717163539915"></p>
 <p>总结：</p>
 <ul>
 <li>删除List的首个结点</li>
@@ -778,7 +801,7 @@
 </code></pre>
 </li>
 </ul>
-<p><img src="Vector-1626485881012.png" alt="Vector"></p>
+<p><img src="/images/loading.png" data-original="Vector-1626485881012.png" alt="Vector"></p>
 <h4 id="以add（）讲解Vector源码"><a href="#以add（）讲解Vector源码" class="headerlink" title="以add（）讲解Vector源码"></a>以add（）讲解Vector源码</h4><ol>
 <li><p>实现代码（采用无参构造）</p>
 <pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"all"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
@@ -857,7 +880,7 @@
         <span class="token keyword">this</span><span class="token punctuation">.</span>capacityIncrement <span class="token operator">=</span> capacityIncrement<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 </code></pre>
-<p><img src="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717105743261.png" alt="image-20210717105743261"></p>
+<p><img src="/images/loading.png" data-original="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717105743261.png" alt="image-20210717105743261"></p>
 </li>
 </ol>
 </li>
@@ -964,9 +987,12 @@
 <li><strong>Arrays类的copyOf（）实现</strong></li>
 </ul>
 <blockquote>
-<p>Copies the specified array, truncating or padding with nulls (if necessary) so the copy has the specified length. For all indices that are valid in both the original array and the copy, the two arrays will contain identical values. For any indices that are valid in the copy but not the original, the copy will contain null. Such indices will exist if and only if the specified length is greater than that of the original array. The resulting array is of the class newType.<br>Params:<br>original – the array to be copied<br>newLength – the length of the copy to be returned<br>newType – the class of the copy to be returned<br>Type parameters:<br><t> – the class of the objects in the returned array<br><u> – the class of the objects in the original array<br>Returns:<br>a copy of the original array, truncated or padded with nulls to obtain the specified length<br>Throws:<br>NegativeArraySizeException – if newLength is negative<br>NullPointerException – if original is null<br>ArrayStoreException – if an element copied from original is not of a runtime type that can be stored in an array of class newType<br>Since:<br>1.6</u></t></p><u>
+<p>Copies the specified array, truncating or padding with nulls (if necessary) so the copy has the<br>specified length. For all indices that are valid in both the original array and the copy, the two<br>arrays will contain identical values. For any indices that are valid in the copy but not the<br>original, the copy will contain null. Such indices will exist if and only if the specified length is<br>greater than that of the original array. The resulting array is of the class newType.<br>Params:<br>original – the array to be copied<br>newLength – the length of the copy to be returned<br>newType – the class of the copy to be returned<br>Type parameters:<br>the class of the objects in the returned array<br>the class of the objects in the original array<br>Returns:</p>
+</blockquote>
+<blockquote>
+<p>a copy of the original array, truncated or padded with nulls to obtain the specified length<br>Throws:<br>NegativeArraySizeException – if newLength is negative<br>NullPointerException – if original is null<br>ArrayStoreException – if an element copied from original is not of a runtime type that can be stored<br>in an array of class newType<br>Since:<br>1.6</p>
 <p>复制指定的数组，截断或用空值填充（如果需要），使副本具有指定的长度。对于所有在原始数组和副本中都有效的索引，这两个数组将包含相同的值。对于任何在副本中有效但在原始数组中无效的指数，副本将包含空值。当且仅当指定的长度大于原始数组的长度时，这些索引才会存在。产生的数组是newType类型的。<br>Params:<br>original - 要复制的数组<br>newLength - 要返回的拷贝的长度<br>newType - 要返回的副本的类型<br>类型参数。<br><t> - 返回数组中的对象的类别<br><u> - 原始数组中的对象的类型<br>返回。<br>原始数组的副本，被截断或用空值填充以获得指定的长度<br>抛出。<br>NegativeArraySizeException - 如果newLength是负数的话<br>NullPointerException - 如果原数组是空的<br>ArrayStoreException - 如果从原数组复制的元素不属于可以存储在newType类数组中的运行时类型。<br>自从。<br>1.6</u></t></p><u>
-</u></u></blockquote><u><u>
+</u></blockquote><u>
 <pre class=" language-java"><code class="language-java">    <span class="token annotation punctuation">@HotSpotIntrinsicCandidate</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T<span class="token punctuation">,</span>U<span class="token operator">></span> T<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">copyOf</span><span class="token punctuation">(</span>U<span class="token punctuation">[</span><span class="token punctuation">]</span> original<span class="token punctuation">,</span> <span class="token keyword">int</span> newLength<span class="token punctuation">,</span> Class<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">></span> newType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token string">"unchecked"</span><span class="token punctuation">)</span>
@@ -979,15 +1005,15 @@
     <span class="token punctuation">}</span>
 </code></pre>
 <p><strong>扩容返回的<code>copy</code>数组</strong></p>
-<img src="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717113734573.png" alt="image-20210717113734573" style="zoom: 67%;">
+<img src="/images/loading.png" data-original="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717113734573.png" alt="image-20210717113734573" style="zoom: 67%;">
 
 
 
 <p><strong>扩容后的elementData数组</strong></p>
-<img src="http://hqd66.oss-cn-chengdu.aliyuncs.com/img/image-20210717113851343.png" alt="image-20210717113851343" style="zoom:80%;">
+<img src="/images/loading.png" data-original="http://hqd66.oss-cn-chengdu.aliyuncs.com/img/image-20210717113851343.png" alt="image-20210717113851343" style="zoom:80%;">
 
 <p><strong>添加了11个元素</strong></p>
-<img src="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717114127924.png" alt="image-20210717114127924" style="zoom: 80%;">
+<img src="/images/loading.png" data-original="D:/JavaProjects/AoYiXiong_Java/Java_Basics/src/In_Collections/image-20210717114127924.png" alt="image-20210717114127924" style="zoom: 80%;">
 
 <p><strong>3.Vector add方法总结</strong></p>
 <p>无参构造</p>
@@ -1009,7 +1035,7 @@
         <span class="token keyword">this</span><span class="token punctuation">.</span>capacityIncrement <span class="token operator">=</span> capacityIncrement<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 </code></pre>
-</u></u>
+</u>
                 
             </div>
             <hr/>
@@ -1035,7 +1061,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Hedeoery.github.io/undefined/1361.html">https://Hedeoery.github.io/undefined/1361.html</a>
+                    <a href="https://Hedeoery.github.io/posts/1361.html">https://Hedeoery.github.io/posts/1361.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1077,12 +1103,12 @@
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -1200,10 +1226,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1230,6 +1256,272 @@
     
 
     
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/valine/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStorehttps://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'UkcQmetemMBq0Ezp3tPbX5CF-gzGzoHsz',
+        appKey: 'ONFLNAw8GwyCJmmGsewDEcNr',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
 
     
 
@@ -1242,18 +1534,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/undefined/1361.html">
+                <a href="/posts/776d.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Firstmd">
+                        <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/featureimages/15.jpg" class="responsive-img" alt="JavaTest2.md">
                         
-                        <span class="card-title">Firstmd</span>
+                        <span class="card-title">JavaTest2.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1263,9 +1554,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-19
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1274,7 +1565,14 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">测试</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1285,11 +1583,11 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/undefined/3eeb.html">
+                <a href="/posts/3eeb.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/images/loading.png" data-original="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
                         <span class="card-title">Hello World</span>
                     </div>
@@ -1324,21 +1622,21 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1359,15 +1657,15 @@
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('10'),
+            headingSelector: 'h2, h3, h4, h5, h6'
         });
 
         // modify the toc link href to support Chinese.
@@ -1379,7 +1677,7 @@
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h2, h3, h4, h5, h6').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1444,7 +1742,7 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -1494,7 +1792,7 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
@@ -1513,7 +1811,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.5k</span>
+                        class="white-color">8.8k</span>
             
             
             
@@ -1539,13 +1837,13 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://Hedeoery.github.io" class="tooltipped" target="_blank" data-tooltip="Hedeoer's github" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:2138994474@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:2138994474@qq.com" class="tooltipped" target="_blank" data-tooltip="QQ我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1564,10 +1862,6 @@
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
@@ -1688,12 +1982,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1714,10 +2008,8 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1733,14 +2025,26 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(i){i.imageLazyLoadSetting.processImages=a;var n=i.imageLazyLoadSetting.isSPA,o=i.imageLazyLoadSetting.preloadRatio||1,l=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function a(){n&&(l=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var r=0;r<l.length;r++)t=l[r],void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(i.innerHeight*o||document.documentElement.clientHeight*o)&&function(t){var e,i,n,o,a=l[r];e=a,i=function(){l=l.filter(function(t){return a!==t})},n=new Image,o=e.getAttribute("data-original"),n.onload=function(){e.src=o,i&&i()},e.src!==o&&(n.src=o)}();var t,e}a(),i.addEventListener("scroll",function(){var t,e;t=a,e=i,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
 
-<!--动态线条背景-->
-<script type="text/javascript"
-color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+<!--网页背景雪花效果-->
+<script src="/js/snow.js"></script>
+
+<!--动态标题-->
+<script type="text/javascript">
+    var OriginTitile=document.title,st;
+    document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="ヽ(●-`Д´-)ノhappy",clearTimeout(st)):(document.title="(Ő∀Ő3)ノsolo",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
 </script>
