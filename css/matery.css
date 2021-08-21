@@ -283,6 +283,11 @@ header .nav-transparent {
     background-color: transparent !important;
     background-image: none;
     box-shadow: none;
+
+    /* background-color: transparent !important;*/
+/*    background-color: #000B3F;
+    background-image: none;
+    box-shadow: none;*/
 }
 
 header nav .brand-span {
@@ -550,10 +555,10 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
+/*.bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+}*/
 
 .bg-cover:before,
 .bg-cover:after {
@@ -2138,3 +2143,5 @@ footer .copy-right {
     padding: 0;
     margin: 0;
 }
+
+
