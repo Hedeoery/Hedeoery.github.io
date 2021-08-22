@@ -366,16 +366,14 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(http://hqd66.oss-cn-chengdu.aliyuncs.com/HedeoeryBlogSur/' + Math.round(Math.random()*19) + '.jpg)');
 </script>
 
 
-<script>
-    // Dynamically switch banner pictures every day.
-    //把getDay换成getDate（），则可以按照当前几号显示下图片，最多31张！
-    $('.bg-cover').css('background-image', 'url(https://blogcdq.oss-cn-beijing.aliyuncs.com/image/blog/' + new Date().getDate() + '.jpg)');
-</script>
+
+
+
+
     </div>
 </div>
 
