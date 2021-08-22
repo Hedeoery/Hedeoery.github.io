@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
+    <meta name="keywords" content="泛型类和泛型方法, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
     <meta name="description" content="专注于Web,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 奥义猫sir</title>
+    <title>泛型类和泛型方法 | 奥义猫sir</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">泛型类和泛型方法</h1>
                 </div>
             </div>
         </div>
@@ -461,12 +461,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%B3%9B%E5%9E%8B/">
+                                <span class="chip bg-color">泛型</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%B3%9B%E5%9E%8B%E6%96%B9%E6%B3%95/">
+                                <span class="chip bg-color">泛型方法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%B3%9B%E5%9E%8B/" class="post-category">
+                                泛型
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -475,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-19
+                    2021-08-22
                 </div>
                 
 
@@ -484,14 +501,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    82
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -511,19 +528,241 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer noopener">Hexo</a>! This is your very first post. Check <a target="_blank" href="https://hexo.io/docs/" rel="external nofollow noreferrer noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noreferrer noopener">troubleshooting</a> or you can ask me on <a target="_blank" href="https://github.com/hexojs/hexo/issues" rel="external nofollow noreferrer noopener">GitHub</a>.</p>
-<h2 id="Quick-Start">0.1Quick Start</h2><h3 id="Create-a-new-post">0.1.1Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <h2 id="泛型优点">0.1泛型优点</h2><ol>
+<li><p>增强代码的可读性</p>
+</li>
+<li><p>使程序更安全，假如创建一个String类型的数组</p>
+<pre class=" language-java"><code class="language-java">String<span class="token punctuation">[</span><span class="token punctuation">]</span> s<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span>
 </code></pre>
-<p>More info: <a target="_blank" href="https://hexo.io/docs/writing.html" rel="external nofollow noreferrer noopener">Writing</a></p>
-<h3 id="Run-server">0.1.2Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+<p>由于数组的多态性，可以向上转型为Obeject</p>
+<pre class=" language-java"><code class="language-java">Object<span class="token punctuation">[</span><span class="token punctuation">]</span> o<span class="token operator">=</span>s<span class="token punctuation">;</span>
 </code></pre>
-<p>More info: <a target="_blank" href="https://hexo.io/docs/server.html" rel="external nofollow noreferrer noopener">Server</a></p>
-<h3 id="Generate-static-files">0.1.3Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+<p>此时就可在o中假如任何的对象，当由s想要获得String类型时，必须使用强制类型转换，</p>
+</li>
+<li><p>菱形语句</p>
+<pre class=" language-java"><code class="language-java">var files <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ArraryList</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>More info: <a target="_blank" href="https://hexo.io/docs/generating.html" rel="external nofollow noreferrer noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">0.1.4Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+<p>代码可读性高，容易知道files储存的就为String类型的元素</p>
+</li>
+</ol>
+<h2 id="泛型实现方式">0.2泛型实现方式</h2><ol>
+<li>类型擦除</li>
+</ol>
+<blockquote>
+<p>对于数组，声明时的类型，将会转交给虚拟机，对数组操作时，将检查类型，定义的泛型类型，编译时将会把类型变量擦除，并替换为就近的限定类型，若无限定类型，则默认为Object</p>
+</blockquote>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">Comparable</span><span class="token operator">></span> Pair<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">getMiddle</span><span class="token punctuation">(</span>T<span class="token punctuation">[</span><span class="token punctuation">]</span> list<span class="token punctuation">)</span>
 </code></pre>
-<p>More info: <a target="_blank" href="https://hexo.io/docs/one-command-deployment.html" rel="external nofollow noreferrer noopener">Deployment</a></p>
+<p>   变量擦除后：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> Pair<span class="token operator">&lt;</span><span class="token operator">></span> <span class="token function">getMiddle</span><span class="token punctuation">(</span>Comparable<span class="token punctuation">[</span><span class="token punctuation">]</span>list<span class="token punctuation">)</span>
+</code></pre>
+<ol start="2">
+<li><p>类型擦除带来的缺点</p>
+<ul>
+<li><p>不可创建泛型类型的数组，但可以声明泛型的变量</p>
+<pre class=" language-java"><code class="language-java">var list<span class="token operator">=</span><span class="token keyword">new</span> <span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token comment" spellcheck="true">//编译错误</span>
+Student<span class="token operator">&lt;</span>People<span class="token operator">></span> aStudent<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//正确</span>
+</code></pre>
+<p>虽然可以对声明通配符的数组进行强制类型转换，但容易出现ClassCastException，即类型转换异常</p>
+<pre class=" language-java"><code class="language-java">var tabel<span class="token operator">=</span><span class="token punctuation">(</span>Student<span class="token operator">&lt;</span>Peoele<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>不可用于含有泛型的类型比较，如instanceof  和==等</p>
+</li>
+</ul>
+</li>
+<li><p>不可用8中基本数据类型作为泛型变量，用基本数据类型作为泛型变量，类型擦除后为Object，但Object为引用数据类型，不可存储基本数据类型</p>
+</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">{</span>
+ 
+<span class="token punctuation">}</span>
+
+<span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//编译错误</span>
+</code></pre>
+<h2 id="泛型类">0.3泛型类</h2><h3 id="结构">0.3.1结构</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Pair</span><span class="token operator">&lt;</span>T<span class="token operator">></span> 
+<span class="token punctuation">{</span>
+   <span class="token keyword">private</span> T first<span class="token punctuation">;</span>
+   <span class="token keyword">private</span> T second<span class="token punctuation">;</span>
+
+   <span class="token keyword">public</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> first <span class="token operator">=</span> null<span class="token punctuation">;</span> second <span class="token operator">=</span> null<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token function">Pair</span><span class="token punctuation">(</span>T first<span class="token punctuation">,</span> T second<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>first <span class="token operator">=</span> first<span class="token punctuation">;</span>  <span class="token keyword">this</span><span class="token punctuation">.</span>second <span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> T <span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> first<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> T <span class="token function">getSecond</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> second<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setFirst</span><span class="token punctuation">(</span>T newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span> first <span class="token operator">=</span> newValue<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSecond</span><span class="token punctuation">(</span>T newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span> second <span class="token operator">=</span> newValue<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>泛型类型一般为大写字母表示，java库中E表集合元素；K和V表键值对；T表任意类型，也可用U和S</p>
+</blockquote>
+<h2 id="泛型方法">0.4泛型方法</h2><p>1.列举</p>
+<pre class=" language-java"><code class="language-java">  <span class="token comment" spellcheck="true">//由于T的类型max和min需要调用compareTo方法，故给T限定类型为Comparable</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">Comparable</span><span class="token operator">></span> Pair<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">getMiddle</span><span class="token punctuation">(</span>T<span class="token punctuation">[</span><span class="token punctuation">]</span> list<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token punctuation">.</span>length<span class="token operator">==</span><span class="token number">0</span><span class="token operator">||</span>list<span class="token operator">==</span>null<span class="token punctuation">)</span>
+          <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+      T min<span class="token operator">=</span>list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      T max<span class="token operator">=</span>list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> list<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>min<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span> min<span class="token operator">=</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//调用comapreTo方法</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>max<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span> max<span class="token operator">=</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Pair</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span>min<span class="token punctuation">,</span>max<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token punctuation">}</span>
+</code></pre>
+<ol start="2">
+<li><p>泛型方法结构说明</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//&lt;T,E extends Comparable&amp;Serializable&amp;Object> &lt;T extends 限定类型></span>
+<span class="token comment" spellcheck="true">//2. Serializable</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token comment" spellcheck="true">//3. Cloneable</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token comment" spellcheck="true">//4. RandomAccess</span>
+<span class="token comment" spellcheck="true">//标签接口在限定类型应放在最后，T的类型就近原则，若无给定限定类型，则默认为Object</span>
+<span class="token comment" spellcheck="true">//</span>
+</code></pre>
+<ul>
+<li>采用&lt;T extends 限定类型&gt;,存在多个限定类型时，<strong>用&amp;连接</strong>；存在多个类型变量，<strong>用,隔开</strong>；应将标记接口放于最后常见的标记接口有RandomAccess， Cloneable，Serializable</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span>T<span class="token punctuation">,</span>E <span class="token keyword">extends</span> <span class="token class-name">Comparable</span><span class="token operator">&amp;</span>Serializable<span class="token operator">&amp;</span>Object<span class="token operator">></span>
+</code></pre>
+<ul>
+<li>存在多个限定类型时，类型变量的类型为就近原则；若无限定类型，默认为object</li>
+</ul>
+</li>
+</ol>
+<p>3.桥方法和编译器中的强制类型转换</p>
+<ul>
+<li>编译器的强制类型转换</li>
+</ul>
+<pre class=" language-java"><code class="language-java">People<span class="token operator">&lt;</span>Student<span class="token operator">></span> s<span class="token operator">=</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+Student aStudent<span class="token operator">=</span>s<span class="token punctuation">.</span><span class="token function">getStudent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//擦除后s.getStudent();的调用返回object类型</span>
+<span class="token comment" spellcheck="true">//编译器将Object强制类型转换Student</span>
+</code></pre>
+<ul>
+<li>桥方法的应用</li>
+</ul>
+<blockquote>
+<p>对于泛型类之间的继承关系，重写父类的方法非常常见，若子类方法头时申明父类的泛型类型，则会在重写方法中带有该泛型</p>
+<p>反之，则重写方法参数为Object,此时该方法称为桥方法</p>
+</blockquote>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">GenericType_Switch</span><span class="token operator">&lt;</span>String<span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> String first<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String second<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">GenericType_Switch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token function">GenericType_Switch</span><span class="token punctuation">(</span>String first<span class="token punctuation">,</span> String second<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>first<span class="token operator">=</span>first<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>second<span class="token operator">=</span>second<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setFirst</span><span class="token punctuation">(</span>String first<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>first<span class="token operator">=</span>first<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSecond</span><span class="token punctuation">(</span>String second<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>second<span class="token operator">=</span>second<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//若调用e.getFirst（）,将会得到Object类型，编译器将会自动出入转换到T类型的强制类型转换</span>
+    <span class="token keyword">public</span> String <span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>first<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> String <span class="token function">getSecond</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>second<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Zi</span> <span class="token keyword">extends</span> <span class="token class-name">GenericType_Switch</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//没指定T的类型</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Zi zi <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        GenericType_Switch fu<span class="token operator">=</span>zi<span class="token punctuation">;</span>
+        fu<span class="token punctuation">.</span><span class="token function">setFirst</span><span class="token punctuation">(</span><span class="token string">"江湖"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token function">Zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//重写泛型类GenericType_Switch的setFirst（）方法，将会在Zi类中产生一个桥方法，即Object类型形参的setFirst（）</span>
+    
+    
+    <span class="token comment" spellcheck="true">//重写父类GenericType_Switch的setFirst（）</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setFirst</span><span class="token punctuation">(</span>String first<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">setFirst</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>子类方法头时没有申明父类的泛型类型</p>
+<p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/%E6%B3%9B%E5%9E%8B/image-20210726191552025-1627298155172.png" alt="image-20210726191552025"></p>
+<h2 id="泛型类型的继承规则">0.5泛型类型的继承规则</h2><ol>
+<li><p>普通的父子类中，可以通过多态，实现向上和向下转型来改变对象的权限。当然，对于向数组这样的强类型，编译器严格表明原本的类型，只可以存储数组声明时的类型对象;否则将会java.lang.ArrayStoreException</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> Generic_Code<span class="token punctuation">.</span>Array_Inherit<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/**
+ * @author DevilStory
+ * @version 0.0.1
+ * @Date 2021/7/27
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Array</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> fu<span class="token punctuation">[</span><span class="token punctuation">]</span> fus<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">fu</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span>  <span class="token keyword">static</span> zi<span class="token punctuation">[</span><span class="token punctuation">]</span> zis<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">zi</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     fu<span class="token punctuation">[</span><span class="token punctuation">]</span> f<span class="token operator">=</span>zis<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//f引自zi类型的数组</span>
+        zi newZi<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        fu newFu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">fu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>newZi<span class="token punctuation">;</span>
+        f<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>newFu<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//向zi类型的数组传入fu类对象</span>
+
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">fu</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">zi</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/%E6%B3%9B%E5%9E%8B/image-20210727115220294-1627357944453.png" alt="image-20210727115220294"></p>
+<p>2.<strong>泛型类型继承</strong></p>
+<ul>
+<li><p>对于拥有继承关系的两个类，当两个类分别作为泛型变量时，此时，两者无任何关系</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">zi</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+Pair<span class="token operator">&lt;</span>zi<span class="token operator">></span> 与pair<span class="token operator">&lt;</span>fu<span class="token operator">></span>无任何关系
+Pair<span class="token operator">&lt;</span>fu<span class="token operator">></span> error<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">pair</span><span class="token operator">&lt;</span>zi<span class="token operator">></span><span class="token comment" spellcheck="true">//错误</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="通配符类型">0.6通配符类型</h2><h3 id="通配符的映入">0.6.1通配符的映入</h3><p>1.对泛型的引入解决代码的安全性做出让步，降低泛型的使用难度<br>格式：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printname</span><span class="token punctuation">(</span>Pair<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span><span class="token operator">></span> p<span class="token punctuation">)</span>
+</code></pre>
+<p>此时，父类中的方法有</p>
+<pre class=" language-java"><code class="language-java"><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">setName</span> <span class="token punctuation">(</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>更改器set拒绝任何对象访问其中？的类型无法确定，访问器get可返回任意类型</p>
+<p>2.区别于extends ，可用super关键字代替，进行通配符类型的限定</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printname</span><span class="token punctuation">(</span>Pair<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> fu<span class="token operator">></span> p<span class="token punctuation">)</span>
+此时get方法只接受父类本身对象或者子类对象，对访问的泛型范围进行限定
+</code></pre>
+<p>3.更为详尽的写法</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">Comaparble</span><span class="token operator">&lt;</span>T<span class="token operator">>></span> T <span class="token function">methodName</span><span class="token punctuation">(</span>T<span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+也可：
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">Comaparble</span><span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token operator">>></span> T <span class="token function">methodName</span><span class="token punctuation">(</span>T<span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+这样使得Comparable中的方法，比如：
+ <span class="token keyword">int</span> <span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token punctuation">)</span>更具有明确的类型
+</code></pre>
+<h3 id="无限定的通配符">0.6.2无限定的通配符</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printname</span><span class="token punctuation">(</span>Pair<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> p<span class="token punctuation">)</span>
+    此时
+    <span class="token operator">?</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">void</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token operator">?</span><span class="token punctuation">)</span>
+    只可以使用get
+</code></pre>
 
                 
             </div>
@@ -550,7 +789,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Hedeoery.github.io/posts/3eeb.html">https://Hedeoery.github.io/posts/3eeb.html</a>
+                    <a href="https://Hedeoery.github.io/posts/1791.html">https://Hedeoery.github.io/posts/1791.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -587,7 +826,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%B3%9B%E5%9E%8B/">
+                                    <span class="chip bg-color">泛型</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%B3%9B%E5%9E%8B%E6%96%B9%E6%B3%95/">
+                                    <span class="chip bg-color">泛型方法</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1027,19 +1274,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/ad63.html">
+                <a href="/posts/1791.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="反射和注解">
+                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="Map">
                         
-                        <span class="card-title">反射和注解</span>
+                        <span class="card-title">Map</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            反射和注解的简单小结
+                            Map的小开始
                         
                     </div>
                     <div class="publish-info">
@@ -1050,8 +1297,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8F%8D%E5%B0%84%E5%92%8C%E6%B3%A8%E8%A7%A3/" class="post-category">
-                                    反射和注解
+                            <a href="/categories/java%E9%9B%86%E5%90%88%EF%BC%88Map%EF%BC%89/" class="post-category">
+                                    java集合（Map）
                                 </a>
                             
                             
@@ -1061,12 +1308,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8F%8D%E5%B0%84/">
-                        <span class="chip bg-color">反射</span>
+                    <a href="/tags/HashMap/">
+                        <span class="chip bg-color">HashMap</span>
                     </a>
                     
-                    <a href="/tags/%E6%B3%A8%E8%A7%A3/">
-                        <span class="chip bg-color">注解</span>
+                    <a href="/tags/LinkedHashMap/">
+                        <span class="chip bg-color">LinkedHashMap</span>
                     </a>
                     
                 </div>
@@ -1080,33 +1327,29 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/ef40.html">
+                <a href="/posts/3825.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="并发基础">
+                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/2.jpg" class="responsive-img" alt="Test">
                         
-                        <span class="card-title">并发基础</span>
+                        <span class="card-title">Test</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是java并发学习基础
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B9%B6%E5%8F%91-java/" class="post-category">
-                                    并发 java
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Hedeoery
                             
                         </span>
                     </div>
@@ -1114,16 +1357,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">并发基础</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%BF%9B%E7%A8%8B/">
-                        <span class="chip bg-color">进程</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BA%BF%E7%A8%8B/">
-                        <span class="chip bg-color">线程</span>
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">-Typora</span>
                     </a>
                     
                 </div>
