@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="异常, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
+    <meta name="keywords" content="接口, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
     <meta name="description" content="专注于Web,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>异常 | 奥义猫sir</title>
+    <title>接口 | 奥义猫sir</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -342,7 +342,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">异常</h1>
+                    <h1 class="description center-align post-title">接口</h1>
                 </div>
             </div>
         </div>
@@ -463,23 +463,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BC%82%E5%B8%B8/">
-                                <span class="chip bg-color">异常</span>
+                            <a href="/tags/%E6%8E%A5%E5%8F%A3/">
+                                <span class="chip bg-color">接口</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/java%E5%BC%82%E5%B8%B8/" class="post-category">
-                                java异常
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -488,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-22
+                    2021-08-23
                 </div>
                 
 
@@ -497,14 +488,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    886
+                    866
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    3 分
                 </div>
                 
 
@@ -524,243 +515,126 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="异常">1异常</h1><p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/java%E5%BC%82%E5%B8%B8/image-20210724175927675-1627120771758.png" alt="image-20210724175927675"></p>
-<h2 id="异常类常用到throwable类的方法">1.1异常类常用到throwable类的方法</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> String <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    
-<span class="token keyword">public</span> String <span class="token function">getLocalizedMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    
-<span class="token keyword">public</span> <span class="token keyword">synchronized</span> Throwable <span class="token function">getCause</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    
-<span class="token keyword">public</span> <span class="token keyword">synchronized</span> Throwable <span class="token function">initCause</span><span class="token punctuation">(</span>Throwable cause<span class="token punctuation">)</span>
-    
-<span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span>
-    
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    
-<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">synchronized</span> <span class="token keyword">void</span> <span class="token function">addSuppressed</span><span class="token punctuation">(</span>Throwable exception<span class="token punctuation">)</span>
+                <h1 id="java中的接口">1java中的接口</h1><h2 id="java-接口的主要内容">1.1java 接口的主要内容</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Aface</span><span class="token punctuation">{</span>
+     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> ACHAR<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//接口常量，只限接口里使用</span>
+     <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">Amethond</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 抽象方法，public abstract可省略，接口的实现类重写。</span>
+     <span class="token keyword">public</span> <span class="token keyword">default</span> <span class="token keyword">void</span> A <span class="token function">methond0</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//默认方法，public可省略。实现类中直接调用或者实现类对象调用</span>
+     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span>  A <span class="token function">methond1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//静态方法 “public”可省略，只供接口使用，不可继承。</span>
+     <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> A <span class="token function">methond2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//静态私有方法，</span>
+     <span class="token keyword">private</span> <span class="token keyword">void</span> A <span class="token function">methond3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//私有方法，不可继承。</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<h2 id="异常处理中的特点">1.2异常处理中的特点</h2><ol>
-<li><p><strong>Throws抛出异常的规则：捕获或者声明并抛出</strong></p>
+<h2 id="多实现时的一些冲突问题">1.2多实现时的一些冲突问题</h2><p>1.接口间的冲突</p>
 <ul>
-<li><p><strong>捕获处理</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
-    
-<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    
+<li><p>两个接口或以上接口的常量在继承时冲突————实现类无法继承</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">interface</span> <span class="token class-name">IA</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> b<span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">IB</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Zi</span> <span class="token keyword">implements</span> <span class="token class-name">IA</span><span class="token punctuation">,</span>IB<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//只继承了b，没有继承a，因为a冲突了</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Zi z <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token comment" spellcheck="true">//   System.out.println(z.a);//编译错误</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>z<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
-<li><p><strong>声明并抛出</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token function">xxxx</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">throws</span> xxxException<span class="token punctuation">{</span>
-    xxxx <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">xxxException</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<li><p>抽象方法冲突————实现类只需重写一次</p>
 </li>
-<li><p><strong>捕获，声明并抛出</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token function">xxxx</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">throws</span> xxxException<span class="token punctuation">{</span>
-    xxxx <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">xxxException</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">try</span><span class="token punctuation">{</span>
-    
-<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    
-<span class="token punctuation">}</span>
-</code></pre>
+<li><p>默认方法冲突————实现类需要重新定义或选择一个接口的默认方法</p>
+</li>
+<li><p>静态方法或者私有方法冲突————不存在冲突</p>
 </li>
 </ul>
-</li>
-<li><p>异常不用做流程处理，因为其效率较低</p>
-</li>
-<li><p>可以使用 try-with-resources 方式，处理资源</p>
-</li>
-<li><p>捕获异常与抛异常，必须是完全匹配，或者捕获异常是抛异常的父类。</p>
-</li>
-<li><p><strong>子类中覆盖了父类的一个方法，子类的方法声明的检查性异常不能比父类中的方法更通用，即只能为父类声明异常的同类型或者子类，且不能不抛出异常；若父类方法没抛出任何异常，则子类的方法也不能抛出任何异常</strong></p>
-</li>
-<li><p><strong>throwable类中的initCause</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IntialCause</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException<span class="token punctuation">,</span>ClassNotFoundException <span class="token punctuation">{</span>
-        <span class="token keyword">try</span> <span class="token punctuation">{</span>
-            <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IOException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> ClassNotFoundException<span class="token punctuation">{</span>
-            <span class="token keyword">try</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
-                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IOException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> throwables<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                ClassNotFoundException serve <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClassNotFoundException</span><span class="token punctuation">(</span><span class="token string">"bbb"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">//应该用父类的异常来包装子类异常</span>
-                <span class="token comment" spellcheck="true">//ClassNotFoundException不是IOException的子类</span>
-                serve<span class="token punctuation">.</span><span class="token function">initCause</span><span class="token punctuation">(</span>throwables<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">throw</span> serve<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+<ol start="2">
+<li><p>接口的实现与类之间的继承时冲突</p>
+<ul>
+<li><p>常量冲突_————没有继承_</p>
+<pre class=" language-Java"><code class="language-Java">class Fu{
+    public static final int a = 10;
+}
+interface IA{
+    public static final int a = 20;
+}
+class Zi extends Fu implements IA{//没有继承a变量
+}
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println(Zi.a);//编译错误
+    } 
 </code></pre>
+</li>
+<li><p>抽象方法冲突————实现类必须重写</p>
+</li>
+<li><p>默认方法冲突————只继承类的默认方法</p>
+</li>
+<li><p>静态方法冲突————只继承类的静态方法</p>
+</li>
+<li><p>私有方法————不存在继承</p>
+</li>
+<li><p>借鉴自<a target="_blank" href="https://juejin.cn/post/6854573214803820557" rel="external nofollow noreferrer noopener">掘金</a></p>
+</li>
+</ul>
+<p>3.冲突解决</p>
+<ul>
+<li><p><strong>超类优先</strong> </p>
+<p>如果超类提供了一个具体方法，同名而且有相同参数类型的默认方法会被忽略</p>
+</li>
+<li><p><strong>接口冲突</strong></p>
+<p>如果一个接口提供了一个默认方法，另一个接口提供了一个同名而且参数类型<em>（不论是否是默认参数）相同的方法</em>，必须覆盖这个方法来解决冲突。（在实现类中覆盖指定要调用的方法。）</p>
+</li>
+<li><p><strong>类优先</strong></p>
+<p>如果一个类扩展了一个超类，同时实现了一个接口，并且从超类和接口继承了相同的方法。这时只会考虑超类方法，接口中的默认方法会被忽略。</p>
+</li>
+</ul>
 </li>
 </ol>
-<p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/java%E5%BC%82%E5%B8%B8/image-20210725110630657-1627182392172.png" alt="image-20210725110630657"></p>
-<ul>
-<li><strong>我们长想要捕获底层的异常但也要抛出高层的异常</strong></li>
-</ul>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IntialCause</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>  <span class="token keyword">throws</span> IOException<span class="token punctuation">{</span>
-
-        <span class="token keyword">try</span> <span class="token punctuation">{</span>
-            <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException<span class="token punctuation">{</span>
-            <span class="token keyword">try</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
-                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">FileNotFoundException</span><span class="token punctuation">(</span><span class="token string">"aaa"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
- <span class="token comment" spellcheck="true">//              IOException serve = new IOException("bbb");</span>
- <span class="token comment" spellcheck="true">//              serve.initCause(file);</span>
-                IOException serve <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IOException</span><span class="token punctuation">(</span><span class="token string">"bbb"</span><span class="token punctuation">,</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">throw</span> serve<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-
-    <span class="token punctuation">}</span>
+<h2 id="接口的属性">1.3接口的属性</h2><ul>
+<li><p>接口并非类，不能实例化接口</p>
+<pre class=" language-java"><code class="language-java">x<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>#错误
 </code></pre>
-<p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/java%E5%BC%82%E5%B8%B8/image-20210725125935490-1627189176648.png" alt="image-20210725125935490"></p>
-<p>7.<strong>finally语句块</strong></p>
-<ul>
-<li><p><strong>finally 语句块在异常处理语句都会执行，一般起到资源释放的作用，而对finally中的可检查异常，可使用嵌套的try-catch语句，例如</strong>：</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
-    
-    <span class="token keyword">try</span> <span class="token punctuation">{</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
-    <span class="token punctuation">}</span>
-    
-<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<hr>
 </li>
-<li><p><strong>若try-catch语句中有return，finally将在return前执行，并且如果fianlly中有return，将会覆盖之前return的结果，造成意料之外的错误,因此finally中不应有return，break，continue，throw等</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Finally_</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//out:4</span>
-        
-    <span class="token punctuation">}</span>
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">add</span> <span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">try</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> a<span class="token operator">+</span>b<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token number">4</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<li><p>接口常量和方法（默认方法，抽象方法，静态方法，私有方法）</p>
+<pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span><span class="token punctuation">)</span>  String NAME<span class="token operator">=</span><span class="token string">"JJ"</span><span class="token punctuation">;</span>
 </code></pre>
+<p>默认方法的优点：</p>
+<ul>
+<li><p>解决了接口<strong>扩展迭代</strong>的问题，对于接口的抽象方法，实现接口的类必须实现abstract method，当需要增加本接口的功能时，可不用改动实现类，方法就是在接口加入默认方法，子类中可以直接使用：</p>
+<blockquote>
+<pre class=" language-java"><code class="language-java">接口名<span class="token punctuation">.</span>默认方法<span class="token punctuation">;</span>
+若调用多个接口有冲突的<span class="token keyword">default</span> method
+则接口名<span class="token punctuation">.</span><span class="token keyword">super</span><span class="token punctuation">.</span>默认方法名
+</code></pre>
+</blockquote>
 </li>
 </ul>
-<p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/java%E5%BC%82%E5%B8%B8/image-20210725131823704-1627190306844.png" alt="image-20210725131823704"></p>
-<h2 id="异常链">1.3异常链</h2><p>未完待续。。。</p>
-<h2 id="断言">1.4断言</h2><p>未完待续、、、</p>
-<h2 id="例子">1.5例子</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Clothes</span>  <span class="token punctuation">{</span>
-    <span class="token keyword">private</span> String BrandName<span class="token punctuation">;</span>
-    <span class="token keyword">private</span> <span class="token keyword">int</span> BrandAddress<span class="token punctuation">;</span>
-    <span class="token keyword">private</span> <span class="token keyword">float</span> revenue<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//用LInkedHashMap来存Clothes对象，</span>
-    <span class="token keyword">private</span> LinkedHashMap<span class="token operator">&lt;</span>String<span class="token punctuation">,</span>Integer<span class="token operator">></span> clothes<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">LinkedHashMap</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token number">0.75f</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">/**
- * 利用BrandName，BrandAddress判断clothes集合是否有对象，并根据revenue计算该品牌的下一年利润
- * 利用异常处理，处理传入next_revenue方法中rate参数的合理性
- * 抛出自定义的异常RateRangeException和RateFormatException
- *
- * */</span>
-    <span class="token keyword">public</span>  <span class="token keyword">float</span> <span class="token function">next_revenue</span><span class="token punctuation">(</span>String Abrand<span class="token punctuation">,</span><span class="token keyword">int</span> brandAddress<span class="token punctuation">,</span>Float rate<span class="token punctuation">)</span><span class="token keyword">throws</span> RateRangeException<span class="token punctuation">,</span>RateFormatException<span class="token punctuation">{</span>
-        <span class="token keyword">try</span><span class="token punctuation">{</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>rate<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RateFormatException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-             <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span> rate<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RateRangeException</span><span class="token punctuation">(</span> rate<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-            <span class="token comment" spellcheck="true">//利用"|"并列自定义的两个毫无相关的异常类</span>
-        <span class="token keyword">catch</span><span class="token punctuation">(</span>RateRangeException <span class="token operator">|</span> RateFormatException e  <span class="token punctuation">)</span><span class="token punctuation">{</span>
-            String message <span class="token operator">=</span> e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token comment" spellcheck="true">//捕获Exception异常，避免没有考虑到的其他异常</span>
-        <span class="token keyword">catch</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"neither range or format error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">//        利用keySet（）方法获取clothes集合中key的set集合，做后续的处理</span>
-        Set clothes_Key <span class="token operator">=</span> clothes<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span>Object o <span class="token operator">:</span> clothes_Key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            Integer integer <span class="token operator">=</span> clothes<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>Abrand<span class="token operator">!=</span>o<span class="token operator">||</span>integer<span class="token operator">!=</span>brandAddress<span class="token punctuation">)</span><span class="token punctuation">{</span>
-                <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span><span class="token keyword">else</span>
-                revenue<span class="token operator">+=</span>brandAddress<span class="token punctuation">;</span>
-                <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>revenue<span class="token operator">*=</span> rate<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-
-    <span class="token punctuation">}</span>
-    <span class="token keyword">public</span> <span class="token function">Clothes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token punctuation">}</span>
-    <span class="token comment" spellcheck="true">// 属性clothes的set方法</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setClothes</span><span class="token punctuation">(</span>LinkedHashMap<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> Integer<span class="token operator">></span> clothes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>clothes <span class="token operator">=</span> clothes<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-
-
-
-<span class="token comment" spellcheck="true">//自定义的异常类</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RateFormatException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token function">RateFormatException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token string">"rate is invalid format"</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> String <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token string">"rate's format is invalid "</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-
-<span class="token comment" spellcheck="true">//自定义的异常类</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RateRangeException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span><span class="token punctuation">{</span>
-    <span class="token keyword">private</span> <span class="token keyword">float</span> rate<span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token function">RateRangeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-
-    <span class="token punctuation">}</span>
-    <span class="token keyword">public</span> <span class="token function">RateRangeException</span><span class="token punctuation">(</span><span class="token keyword">float</span> rate<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>rate<span class="token operator">=</span>rate<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">public</span> String <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> rate<span class="token operator">+</span><span class="token string">":  "</span><span class="token operator">+</span><span class="token string">"rate over normal range is illegible "</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token string">"RateRangeException{"</span> <span class="token operator">+</span>
-                <span class="token string">"rate="</span> <span class="token operator">+</span> rate <span class="token operator">+</span>
-                <span class="token string">'}'</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<hr>
+</li>
+<li><p>接口能声明实现了接口的对象</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Boss</span> <span class="token keyword">implements</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>Boss<span class="token operator">></span><span class="token punctuation">{</span>  <span class="token punctuation">}</span>
+Comparator x<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Boss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>#正确
 </code></pre>
+<hr>
+</li>
+<li><p>接口的多重继承</p>
+<p>区别于抽象类，接口的多继承使得<strong>每个类能实现的扩展能力不同</strong>，如比较，克隆，排序等</p>
+<hr>
+</li>
+</ul>
+<p>##常见的接口</p>
+<ol>
+<li> Comparator and Comparable接口  见<strong>比较与排序</strong>文档</li>
+</ol>
 
                 
             </div>
@@ -787,7 +661,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Hedeoery.github.io/posts/130c.html">https://Hedeoery.github.io/posts/130c.html</a>
+                    <a href="https://Hedeoery.github.io/posts/6b69.html">https://Hedeoery.github.io/posts/6b69.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -825,8 +699,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%BC%82%E5%B8%B8/">
-                                    <span class="chip bg-color">异常</span>
+                                <a href="/tags/%E6%8E%A5%E5%8F%A3/">
+                                    <span class="chip bg-color">接口</span>
                                 </a>
                             
                         </div>
@@ -1264,46 +1138,44 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/9ee5.html">
+                <a href="/posts/6b69.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="Lambda">
+                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="接口">
                         
-                        <span class="card-title">Lambda</span>
+                        <span class="card-title">接口</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java8以来的lambda
+                            java接口
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-23
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/java%E7%9A%84lambda/" class="post-category">
-                                    java的lambda
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Hedeoery
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java8Lambda/">
-                        <span class="chip bg-color">java8Lambda</span>
+                    <a href="/tags/%E6%8E%A5%E5%8F%A3/">
+                        <span class="chip bg-color">接口</span>
                     </a>
                     
                 </div>
@@ -1317,31 +1189,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/63b8.html">
+                <a href="/posts/901e.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="Map">
+                        <img src="/medias/loadgif/load.png" data-original="/medias/featureimages/12.jpg" class="responsive-img" alt="比较与排序">
                         
-                        <span class="card-title">Map</span>
+                        <span class="card-title">比较与排序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Map的小开始
+                            比较和排序接口
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java%E9%9B%86%E5%90%88%EF%BC%88Map%EF%BC%89/" class="post-category">
-                                    java集合（Map）
+                            <a href="/categories/comparable/" class="post-category">
+                                    comparable
                                 </a>
                             
                             
@@ -1351,12 +1223,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HashMap/">
-                        <span class="chip bg-color">HashMap</span>
+                    <a href="/tags/compareTo/">
+                        <span class="chip bg-color">compareTo</span>
                     </a>
                     
-                    <a href="/tags/LinkedHashMap/">
-                        <span class="chip bg-color">LinkedHashMap</span>
+                    <a href="/tags/comparable/">
+                        <span class="chip bg-color">comparable</span>
                     </a>
                     
                 </div>
