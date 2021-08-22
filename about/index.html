@@ -387,21 +387,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">9</a></span>
+    <span class="count"><a href="/">14</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">6</a></span>
+    <span class="count"><a href="/categories">12</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">17</a></span>
+    <span class="count"><a href="/tags">24</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -417,21 +417,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">9</a></span>
+    <span class="count"><a href="/">14</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">6</a></span>
+    <span class="count"><a href="/categories">12</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">17</a></span>
+    <span class="count"><a href="/tags">24</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -567,7 +567,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,9],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,14],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -609,7 +609,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"并发","value":1},{"name":"泛型","value":1},{"name":"并发 java","value":1},{"name":"反射和注解","value":1},{"name":"java集合（Map）","value":1},{"name":"java集合","value":2}],
+                data: [{"name":"并发","value":1},{"name":"java的lambda","value":1},{"name":"泛型","value":1},{"name":"java异常","value":1},{"name":"comparable","value":1},{"name":"java文件配置","value":1},{"name":"I/O流","value":1},{"name":"并发 java","value":1},{"name":"反射和注解","value":1},{"name":"java集合","value":2},{"name":"java集合（Map）","value":1},{"name":"File类","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -633,7 +633,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["-Typora","并发问题","线程池","线程建立","泛型","泛型方法","并发基础","进程","线程","反射"]
+                data: ["-Typora","并发问题","线程池","线程建立","java8Lambda","泛型","泛型方法","异常","compareTo","comparable"]
             }
         ],
         yAxis: [
@@ -840,6 +840,12 @@
             
             
             
+            <a href="/tags/java8Lambda/">
+                <span class="chip center-align waves-effect waves-light chip-default">java8Lambda</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E6%B3%9B%E5%9E%8B/">
                 <span class="chip center-align waves-effect waves-light chip-default">泛型</span>
             </a>
@@ -848,6 +854,42 @@
             
             <a href="/tags/%E6%B3%9B%E5%9E%8B%E6%96%B9%E6%B3%95/">
                 <span class="chip center-align waves-effect waves-light chip-default">泛型方法</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%BC%82%E5%B8%B8/">
+                <span class="chip center-align waves-effect waves-light chip-default">异常</span>
+            </a>
+            
+            
+            
+            <a href="/tags/compareTo/">
+                <span class="chip center-align waves-effect waves-light chip-default">compareTo</span>
+            </a>
+            
+            
+            
+            <a href="/tags/comparable/">
+                <span class="chip center-align waves-effect waves-light chip-default">comparable</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Propertise%E6%BB%A5%E7%94%A8%E7%BB%93%E6%9E%9C/">
+                <span class="chip center-align waves-effect waves-light chip-default">Propertise滥用结果</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Propertise%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
+                <span class="chip center-align waves-effect waves-light chip-default">Propertise简单使用</span>
+            </a>
+            
+            
+            
+            <a href="/tags/File/">
+                <span class="chip center-align waves-effect waves-light chip-default">File</span>
             </a>
             
             
@@ -882,18 +924,6 @@
             
             
             
-            <a href="/tags/HashMap/">
-                <span class="chip center-align waves-effect waves-light chip-default">HashMap</span>
-            </a>
-            
-            
-            
-            <a href="/tags/LinkedHashMap/">
-                <span class="chip center-align waves-effect waves-light chip-default">LinkedHashMap</span>
-            </a>
-            
-            
-            
             <a href="/tags/ArrayList/">
                 <span class="chip center-align waves-effect waves-light chip-default">ArrayList</span>
             </a>
@@ -902,6 +932,18 @@
             
             <a href="/tags/LinkedList/">
                 <span class="chip center-align waves-effect waves-light chip-default">LinkedList</span>
+            </a>
+            
+            
+            
+            <a href="/tags/HashMap/">
+                <span class="chip center-align waves-effect waves-light chip-default">HashMap</span>
+            </a>
+            
+            
+            
+            <a href="/tags/LinkedHashMap/">
+                <span class="chip center-align waves-effect waves-light chip-default">LinkedHashMap</span>
             </a>
             
             
@@ -1048,7 +1090,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.5k</span>
+                        class="white-color">23.4k</span>
             
             
             

@@ -501,14 +501,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.4k
+                    4.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    20 分
+                    19 分
                 </div>
                 
 
@@ -968,9 +968,7 @@
 </li>
 </ul>
 <p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/%E9%9B%86%E5%90%88/Vector-1626485881012.png" alt="Vector"></p>
-<h4 id="以add（）讲解Vector源码">1.2.2.2以add（）讲解Vector源码</h4><ol>
-<li><p><strong>实现代码（采用无参构造）</strong></p>
-<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"all"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<h4 id="以add（）讲解Vector源码">1.2.2.2以add（）讲解Vector源码</h4><h5 id="实现代码（采用无参构造）">1.2.2.2.1实现代码（采用无参构造）</h5><pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"all"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Vector_Eg</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Vector vector <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vector</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//无参构造</span>
@@ -985,10 +983,10 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-</li>
-<li><p><strong>源码实现逻辑</strong></p>
+<p>#####<strong>源码实现逻辑</strong></p>
 <ol>
-<li><p><strong>类加载</strong></p>
+<li><strong>类加载</strong></li>
+</ol>
 <blockquote>
 <p>Loads the class with the specified binary name. This method searches for classes in the same manner as the loadClass(String, boolean) method. It is invoked by the Java virtual machine to resolve class references. Invoking this method is equivalent to invoking loadClass(name, false).<br>Params:<br>name – The binary name of the class<br>Returns:<br>The resulting Class object<br>Throws:<br>ClassNotFoundException – If the class was not found</p>
 <p>以指定的二进制名称加载类。这个方法以与loadClass(String, boolean)方法相同的方式搜索类。它被Java虚拟机调用以解析类的引用。调用此方法等同于调用loadClass(name, false)。<br>参数。<br>name - 类的二进制名称<br>返回。<br>得到的类对象<br>抛出。<br>ClassNotFoundException - 如果没有找到该类。</p>
@@ -1024,7 +1022,8 @@
     <span class="token punctuation">}</span>
 </code></pre>
 <hr>
-<p>2.<strong>调用无参构造，创建初始容量为10的数组elementData，<code>protected Object[] elementData;</code></strong><br><strong>（为Vector类中的储存向量成分的数组缓冲区。矢量的容量是这个数组缓冲区的长度，至少要大到足以容纳该矢量的所有元素。<em>矢量中最后一个元素之后的任何数组元素都是null</em>）、</strong></p>
+<ol start="2">
+<li><p><strong>调用无参构造，创建初始容量为10的数组elementData，<code>protected Object[] elementData;</code></strong><br>  <strong>（为Vector类中的储存向量成分的数组缓冲区。矢量的容量是这个数组缓冲区的长度，至少要大到足以容纳该矢量的所有元素。<em>矢量中最后一个元素之后的任何数组元素都是null</em>）、</strong></p>
 <blockquote>
 <p>Constructs an empty vector so that its internal data array has size 10 and its standard capacity increment is zero.</p>
 <p>构建一个空向量，使其内部数据阵列的大小为10，其标准容量增量为0。</p>
@@ -1048,8 +1047,6 @@
 </code></pre>
 </li>
 </ol>
-</li>
-</ol>
 <hr>
 <p>3.<strong>由于加入的数据对象为基本数据类型，将要“包装”</strong></p>
 <blockquote>
@@ -1063,7 +1060,9 @@
         <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Integer</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 </code></pre>
-<p>4.<strong>正式进入添加方法</strong></p>
+<ol start="4">
+<li><strong>正式进入添加方法</strong></li>
+</ol>
 <blockquote>
 <p>Appends the specified element to the end of this Vector.<br>Params:<br>e – element to be appended to this Vector<br>Returns:<br>true (as specified by Collection.add)<br>Since:<br>1.2</p>
 <p>将指定的元素追加到这个Vector的末尾。<br>Params:<br>e - 要追加到这个Vector的元素<br>返回。<br>true (由Collection.add指定)<br>自从。<br>1.2</p>
@@ -1152,9 +1151,8 @@
 <li><strong>Arrays类的copyOf（）实现</strong></li>
 </ul>
 <blockquote>
-<p>Copies the specified array, truncating or padding with nulls (if necessary) so the copy has the specified length. For all indices that are valid in both the original array and the copy, the two arrays will contain identical values. For any indices that are valid in the copy but not the original, the copy will contain null. Such indices will exist if and only if the specified length is greater than that of the original array. The resulting array is of the class newType.<br>Params:<br>original – the array to be copied<br>newLength – the length of the copy to be returned<br>newType – the class of the copy to be returned<br>Type parameters:<br><t> – the class of the objects in the returned array<br><u> – the class of the objects in the original array<br>Returns:<br>a copy of the original array, truncated or padded with nulls to obtain the specified length<br>Throws:<br>NegativeArraySizeException – if newLength is negative<br>NullPointerException – if original is null<br>ArrayStoreException – if an element copied from original is not of a runtime type that can be stored in an array of class newType<br>Since:<br>1.6</u></t></p><u>
-<p>复制指定的数组，截断或用空值填充（如果需要），使副本具有指定的长度。对于所有在原始数组和副本中都有效的索引，这两个数组将包含相同的值。对于任何在副本中有效但在原始数组中无效的指数，副本将包含空值。当且仅当指定的长度大于原始数组的长度时，这些索引才会存在。产生的数组是newType类型的。<br>Params:<br>original - 要复制的数组<br>newLength - 要返回的拷贝的长度<br>newType - 要返回的副本的类型<br>类型参数。<br><t> - 返回数组中的对象的类别<br><u> - 原始数组中的对象的类型<br>返回。<br>原始数组的副本，被截断或用空值填充以获得指定的长度<br>抛出。<br>NegativeArraySizeException - 如果newLength是负数的话<br>NullPointerException - 如果原数组是空的<br>ArrayStoreException - 如果从原数组复制的元素不属于可以存储在newType类数组中的运行时类型。<br>自从。<br>1.6</u></t></p><u>
-</u></u></blockquote><u><u>
+<p>复制指定的数组，截断或用空值填充（如果需要），使副本具有指定的长度。对于所有在原始数组和副本中都有效的索引，这两个数组将包含相同的值。对于任何在副本中有效但在原始数组中无效的指数，副本将包含空值。当且仅当指定的长度大于原始数组的长度时，这些索引才会存在。产生的数组是newType类型的。</p>
+</blockquote>
 <pre class=" language-java"><code class="language-java">    <span class="token annotation punctuation">@HotSpotIntrinsicCandidate</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T<span class="token punctuation">,</span>U<span class="token operator">></span> T<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">copyOf</span><span class="token punctuation">(</span>U<span class="token punctuation">[</span><span class="token punctuation">]</span> original<span class="token punctuation">,</span> <span class="token keyword">int</span> newLength<span class="token punctuation">,</span> Class<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">></span> newType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token string">"unchecked"</span><span class="token punctuation">)</span>
@@ -1173,7 +1171,7 @@
 
 <p><strong>添加了11个元素</strong></p>
 <p><img src="/medias/loadgif/load.png" data-original="http://cdn.jsdelivr.net/gh/Hedeoery/PictureStore/img/Java/%E9%9B%86%E5%90%88/image-20210822214905230.png" alt="image-20210822214905230"></p>
-<p><strong>3.Vector add方法总结</strong></p>
+<p>5.<strong>Vector 的add（）总结</strong></p>
 <p>无参构造</p>
 <ul>
 <li>初始为10</li>
@@ -1193,7 +1191,7 @@
         <span class="token keyword">this</span><span class="token punctuation">.</span>capacityIncrement <span class="token operator">=</span> capacityIncrement<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 </code></pre>
-</u></u>
+
                 
             </div>
             <hr/>
@@ -2001,7 +1999,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.5k</span>
+                        class="white-color">23.4k</span>
             
             
             

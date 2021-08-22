@@ -669,10 +669,10 @@
 <p>计算key.hashCode()并将hash的高位分散到低位。由于该表使用了2次方掩码，仅在当前掩码以上的位数不同的哈希值集将总是发生碰撞。(已知的例子包括在小表中持有连续整数的Float键的集合）。) 因此，我们应用一个转换，将高位的影响向下分散。在速度、实用性和位传播的质量之间有一个权衡。因为许多常见的哈希集已经是合理分布的（所以不受益于传播），而且因为我们使用树来处理大集的碰撞，我们只是以最便宜的方式XOR一些移位的比特，以减少系统损失，以及纳入最高比特的影响，否则由于表的界限，永远不会被用于索引计算。</p>
 </blockquote>
 <p><em>对象的hash值分散，避免hash值碰撞</em></p>
-<pre><code>static final int hash(Object key) {
-    int h;
-    return (key == null) ? 0 : (h = key.hashCode()) ^ (h &gt;&gt;&gt; 16);
-}
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token function">hash</span><span class="token punctuation">(</span>Object key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> h<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>key <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token punctuation">(</span>h <span class="token operator">=</span> key<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">^</span> <span class="token punctuation">(</span>h <span class="token operator">>>></span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <blockquote>
 <p>Implements Map.put and related methods.<br>Params:<br>hash – hash for key<br>key – the key<br>value – the value to put<br>onlyIfAbsent – if true, don’t change existing value<br>evict – if false, the table is in creation mode.<br>Returns:<br>previous value, or null if none</p>
@@ -1756,7 +1756,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.5k</span>
+                        class="white-color">23.4k</span>
             
             
             
