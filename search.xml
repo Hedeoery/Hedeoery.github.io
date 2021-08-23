@@ -13,7 +13,9 @@
       
       <categories>
           
-          <category> java基础 </category>
+          <category> Java </category>
+          
+          <category> 零碎 </category>
           
       </categories>
       
@@ -40,7 +42,9 @@
       
       <categories>
           
-          <category> 拷贝 </category>
+          <category> Java </category>
+          
+          <category> 零碎 </category>
           
       </categories>
       
@@ -69,6 +73,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字节流 </category>
           
       </categories>
@@ -94,6 +102,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字节流 </category>
           
       </categories>
@@ -118,6 +130,10 @@
       
       
       <categories>
+          
+          <category> Java </category>
+          
+          <category> IO流 </category>
           
           <category> 字节流 </category>
           
@@ -146,6 +162,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字节流 </category>
           
       </categories>
@@ -170,6 +190,10 @@
       
       
       <categories>
+          
+          <category> Java </category>
+          
+          <category> IO流 </category>
           
           <category> 字节流 </category>
           
@@ -196,6 +220,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字符流 </category>
           
       </categories>
@@ -221,6 +249,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字符流 </category>
           
       </categories>
@@ -245,6 +277,10 @@
       
       
       <categories>
+          
+          <category> Java </category>
+          
+          <category> IO流 </category>
           
           <category> 字符流 </category>
           
@@ -273,6 +309,10 @@
       
       <categories>
           
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
           <category> 字符流 </category>
           
       </categories>
@@ -296,6 +336,14 @@
         <content type="html"><![CDATA[<h1 id="java中的接口">1java中的接口</h1><h2 id="java-接口的主要内容">1.1java 接口的主要内容</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Aface</span><span class="token punctuation">{</span>     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> ACHAR<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//接口常量，只限接口里使用</span>     <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">Amethond</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 抽象方法，public abstract可省略，接口的实现类重写。</span>     <span class="token keyword">public</span> <span class="token keyword">default</span> <span class="token keyword">void</span> A <span class="token function">methond0</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//默认方法，public可省略。实现类中直接调用或者实现类对象调用</span>     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span>  A <span class="token function">methond1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//静态方法 “public”可省略，只供接口使用，不可继承。</span>     <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> A <span class="token function">methond2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//静态私有方法，</span>     <span class="token keyword">private</span> <span class="token keyword">void</span> A <span class="token function">methond3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//私有方法，不可继承。</span><span class="token punctuation">}</span></code></pre><h2 id="多实现时的一些冲突问题">1.2多实现时的一些冲突问题</h2><p>1.接口间的冲突</p><ul><li><p>两个接口或以上接口的常量在继承时冲突————实现类无法继承</p><pre class=" language-java"><code class="language-java"><span class="token keyword">interface</span> <span class="token class-name">IA</span><span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> b<span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">interface</span> <span class="token class-name">IB</span><span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">class</span> <span class="token class-name">Zi</span> <span class="token keyword">implements</span> <span class="token class-name">IA</span><span class="token punctuation">,</span>IB<span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">//只继承了b，没有继承a，因为a冲突了</span><span class="token punctuation">}</span><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>        Zi z <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//   System.out.println(z.a);//编译错误</span>        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>z<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre></li><li><p>抽象方法冲突————实现类只需重写一次</p></li><li><p>默认方法冲突————实现类需要重新定义或选择一个接口的默认方法</p></li><li><p>静态方法或者私有方法冲突————不存在冲突</p></li></ul><ol start="2"><li><p>接口的实现与类之间的继承时冲突</p><ul><li><p>常量冲突_————没有继承_</p><pre class=" language-Java"><code class="language-Java">class Fu{    public static final int a = 10;}interface IA{    public static final int a = 20;}class Zi extends Fu implements IA{//没有继承a变量}public class Demo {    public static void main(String[] args) {        System.out.println(Zi.a);//编译错误    } </code></pre></li><li><p>抽象方法冲突————实现类必须重写</p></li><li><p>默认方法冲突————只继承类的默认方法</p></li><li><p>静态方法冲突————只继承类的静态方法</p></li><li><p>私有方法————不存在继承</p></li><li><p>借鉴自<a href="https://juejin.cn/post/6854573214803820557" rel="external nofollow noreferrer">掘金</a></p></li></ul><p>3.冲突解决</p><ul><li><p><strong>超类优先</strong> </p><p>如果超类提供了一个具体方法，同名而且有相同参数类型的默认方法会被忽略</p></li><li><p><strong>接口冲突</strong></p><p>如果一个接口提供了一个默认方法，另一个接口提供了一个同名而且参数类型<em>（不论是否是默认参数）相同的方法</em>，必须覆盖这个方法来解决冲突。（在实现类中覆盖指定要调用的方法。）</p></li><li><p><strong>类优先</strong></p><p>如果一个类扩展了一个超类，同时实现了一个接口，并且从超类和接口继承了相同的方法。这时只会考虑超类方法，接口中的默认方法会被忽略。</p></li></ul></li></ol><h2 id="接口的属性">1.3接口的属性</h2><ul><li><p>接口并非类，不能实例化接口</p><pre class=" language-java"><code class="language-java">x<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>#错误</code></pre><hr></li><li><p>接口常量和方法（默认方法，抽象方法，静态方法，私有方法）</p><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span><span class="token punctuation">)</span>  String NAME<span class="token operator">=</span><span class="token string">"JJ"</span><span class="token punctuation">;</span></code></pre><p>默认方法的优点：</p><ul><li><p>解决了接口<strong>扩展迭代</strong>的问题，对于接口的抽象方法，实现接口的类必须实现abstract method，当需要增加本接口的功能时，可不用改动实现类，方法就是在接口加入默认方法，子类中可以直接使用：</p><blockquote><pre class=" language-java"><code class="language-java">接口名<span class="token punctuation">.</span>默认方法<span class="token punctuation">;</span>若调用多个接口有冲突的<span class="token keyword">default</span> method则接口名<span class="token punctuation">.</span><span class="token keyword">super</span><span class="token punctuation">.</span>默认方法名</code></pre></blockquote></li></ul><hr></li><li><p>接口能声明实现了接口的对象</p><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token keyword">class</span> <span class="token class-name">Boss</span> <span class="token keyword">implements</span> <span class="token class-name">Comparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>Boss<span class="token operator">></span><span class="token punctuation">{</span>  <span class="token punctuation">}</span>Comparator x<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Boss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>#正确</code></pre><hr></li><li><p>接口的多重继承</p><p>区别于抽象类，接口的多继承使得<strong>每个类能实现的扩展能力不同</strong>，如比较，克隆，排序等</p><hr></li></ul><p>##常见的接口</p><ol><li> Comparator and Comparable接口  见<strong>比较与排序</strong>文档</li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> 零碎 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -317,7 +365,9 @@
       
       <categories>
           
-          <category> comparable </category>
+          <category> Java </category>
+          
+          <category> 零碎 </category>
           
       </categories>
       
@@ -344,9 +394,11 @@
       
       <categories>
           
-          <category> I/O流 </category>
+          <category> Java </category>
           
-          <category> File类 </category>
+          <category> IO流 </category>
+          
+          <category> 文件操作 </category>
           
       </categories>
       
@@ -371,7 +423,11 @@
       
       <categories>
           
-          <category> java文件配置 </category>
+          <category> Java </category>
+          
+          <category> IO流 </category>
+          
+          <category> Propertise </category>
           
       </categories>
       
@@ -398,7 +454,9 @@
       
       <categories>
           
-          <category> java的lambda </category>
+          <category> Java </category>
+          
+          <category> lambda和方法引用 </category>
           
       </categories>
       
@@ -423,7 +481,9 @@
       
       <categories>
           
-          <category> java异常 </category>
+          <category> Java </category>
+          
+          <category> 异常处理 </category>
           
       </categories>
       
@@ -448,7 +508,9 @@
       
       <categories>
           
-          <category> java集合（Map） </category>
+          <category> Java </category>
+          
+          <category> 集合框架 </category>
           
       </categories>
       
@@ -475,7 +537,9 @@
       
       <categories>
           
-          <category> java集合 </category>
+          <category> Java </category>
+          
+          <category> 集合框架 </category>
           
       </categories>
       
@@ -502,7 +566,9 @@
       
       <categories>
           
-          <category> java集合 </category>
+          <category> Java </category>
+          
+          <category> 集合框架 </category>
           
       </categories>
       
@@ -529,6 +595,8 @@
       
       <categories>
           
+          <category> Java </category>
+          
           <category> 泛型 </category>
           
       </categories>
@@ -547,25 +615,6 @@
     
     
     <entry>
-      <title>Test</title>
-      <link href="/posts/3825.html"/>
-      <url>/posts/3825.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> -Typora </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>反射和注解</title>
       <link href="/posts/ad63.html"/>
       <url>/posts/ad63.html</url>
@@ -575,7 +624,9 @@
       
       <categories>
           
-          <category> 反射和注解 </category>
+          <category> Java </category>
+          
+          <category> 泛型 </category>
           
       </categories>
       
@@ -593,19 +644,6 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/posts/3eeb.html"/>
-      <url>/posts/3eeb.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" rel="external nofollow noreferrer">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noreferrer">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noreferrer">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noreferrer">GitHub</a>.</p><h2 id="Quick-Start">0.1Quick Start</h2><h3 id="Create-a-new-post">0.1.1Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" rel="external nofollow noreferrer">Writing</a></p><h3 id="Run-server">0.1.2Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" rel="external nofollow noreferrer">Server</a></p><h3 id="Generate-static-files">0.1.3Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" rel="external nofollow noreferrer">Generating</a></p><h3 id="Deploy-to-remote-sites">0.1.4Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" rel="external nofollow noreferrer">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>并发基础</title>
       <link href="/posts/ef40.html"/>
       <url>/posts/ef40.html</url>
@@ -615,7 +653,9 @@
       
       <categories>
           
-          <category> 并发 java </category>
+          <category> Java </category>
+          
+          <category> 并发和多线程 </category>
           
       </categories>
       
@@ -644,7 +684,9 @@
       
       <categories>
           
-          <category> 并发 </category>
+          <category> Java </category>
+          
+          <category> 并发和多线程 </category>
           
       </categories>
       
